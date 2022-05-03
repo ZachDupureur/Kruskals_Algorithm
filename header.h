@@ -1,5 +1,5 @@
 //
-// Created by zach on 5/2/22.
+// Created by Zach Dupureur on 5/2/22.
 //
 
 #ifndef UNTITLED1_HEADER_H
@@ -8,15 +8,9 @@
 #include "iostream"
 #include "iomanip"
 #include "vector"
+#include "climits"
 
-class Tree {
-public:
-    std::vector<char> vertex;
-    void addEdge(char vertex[]);
-};
+void createGraph(std::vector<int> input[]);
 
-void Tree::addEdge(char *vertex) {
-
-}
 
 #endif //UNTITLED1_HEADER_H

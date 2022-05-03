@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.22)
-project(untitled1)
+project(Kruskal_s_Algo)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled1 main.cpp header.h implementation.cpp)
+include_directories(.)
+
+add_executable(Kruskal_s_Algo
+        header.h
+        implementation.cpp
+        main.cpp)

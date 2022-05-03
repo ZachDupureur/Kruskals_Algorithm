@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: untitled1
+# Project: Kruskal_s_Algo
 # Configurations: Debug
 # =============================================================================
 
@@ -39,50 +39,57 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/zach/Documents/Coding/CS$ 130/untitled1/cmake-build-debug/
+cmake_ninja_workdir = /home/zach/Nextcloud/Coding/CS$ 236/Kruskal's$ Algo/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target untitled1
+# Object build statements for EXECUTABLE target Kruskal_s_Algo
 
 
 #############################################
-# Order-only phony target for untitled1
+# Order-only phony target for Kruskal_s_Algo
 
-build cmake_object_order_depends_target_untitled1: phony || CMakeFiles/untitled1.dir
+build cmake_object_order_depends_target_Kruskal_s_Algo: phony || CMakeFiles/Kruskal_s_Algo.dir
 
-build CMakeFiles/untitled1.dir/main.cpp.o: CXX_COMPILER__untitled1_Debug /home/zach/Documents/Coding/CS$ 130/untitled1/main.cpp || cmake_object_order_depends_target_untitled1
-  DEP_FILE = CMakeFiles/untitled1.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles/untitled1.dir
-  OBJECT_FILE_DIR = CMakeFiles/untitled1.dir
-
-build CMakeFiles/untitled1.dir/implementation.cpp.o: CXX_COMPILER__untitled1_Debug /home/zach/Documents/Coding/CS$ 130/untitled1/implementation.cpp || cmake_object_order_depends_target_untitled1
-  DEP_FILE = CMakeFiles/untitled1.dir/implementation.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles/untitled1.dir
-  OBJECT_FILE_DIR = CMakeFiles/untitled1.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target untitled1
-
-
-#############################################
-# Link the executable untitled1
-
-build untitled1: CXX_EXECUTABLE_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/main.cpp.o CMakeFiles/untitled1.dir/implementation.cpp.o
+build CMakeFiles/Kruskal_s_Algo.dir/implementation.cpp.o: CXX_COMPILER__Kruskal_s_Algo_Debug /home/zach/Nextcloud/Coding/CS$ 236/Kruskal's$ Algo/implementation.cpp || cmake_object_order_depends_target_Kruskal_s_Algo
+  DEP_FILE = CMakeFiles/Kruskal_s_Algo.dir/implementation.cpp.o.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/untitled1.dir
+  INCLUDES = -I"/home/zach/Nextcloud/Coding/CS 236/Kruskal's Algo/."
+  OBJECT_DIR = CMakeFiles/Kruskal_s_Algo.dir
+  OBJECT_FILE_DIR = CMakeFiles/Kruskal_s_Algo.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Kruskal_s_Algo.dir/
+  TARGET_PDB = Kruskal_s_Algo.pdb
+
+build CMakeFiles/Kruskal_s_Algo.dir/main.cpp.o: CXX_COMPILER__Kruskal_s_Algo_Debug /home/zach/Nextcloud/Coding/CS$ 236/Kruskal's$ Algo/main.cpp || cmake_object_order_depends_target_Kruskal_s_Algo
+  DEP_FILE = CMakeFiles/Kruskal_s_Algo.dir/main.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I"/home/zach/Nextcloud/Coding/CS 236/Kruskal's Algo/."
+  OBJECT_DIR = CMakeFiles/Kruskal_s_Algo.dir
+  OBJECT_FILE_DIR = CMakeFiles/Kruskal_s_Algo.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Kruskal_s_Algo.dir/
+  TARGET_PDB = Kruskal_s_Algo.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Kruskal_s_Algo
+
+
+#############################################
+# Link the executable Kruskal_s_Algo
+
+build Kruskal_s_Algo: CXX_EXECUTABLE_LINKER__Kruskal_s_Algo_Debug CMakeFiles/Kruskal_s_Algo.dir/implementation.cpp.o CMakeFiles/Kruskal_s_Algo.dir/main.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/Kruskal_s_Algo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = untitled1
-  TARGET_PDB = untitled1.dbg
+  TARGET_COMPILE_PDB = CMakeFiles/Kruskal_s_Algo.dir/
+  TARGET_FILE = Kruskal_s_Algo
+  TARGET_PDB = Kruskal_s_Algo.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/zach/Documents/Coding/CS 130/untitled1/cmake-build-debug" && /opt/clion-2021.3.2/bin/cmake/linux/bin/ccmake -S"/home/zach/Documents/Coding/CS 130/untitled1" -B"/home/zach/Documents/Coding/CS 130/untitled1/cmake-build-debug"
+  COMMAND = cd "/home/zach/Nextcloud/Coding/CS 236/Kruskal's Algo/cmake-build-debug" && /opt/clion-2021.3.2/bin/cmake/linux/bin/ccmake -S"/home/zach/Nextcloud/Coding/CS 236/Kruskal's Algo" -B"/home/zach/Nextcloud/Coding/CS 236/Kruskal's Algo/cmake-build-debug"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -94,7 +101,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/zach/Documents/Coding/CS 130/untitled1/cmake-build-debug" && /opt/clion-2021.3.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S"/home/zach/Documents/Coding/CS 130/untitled1" -B"/home/zach/Documents/Coding/CS 130/untitled1/cmake-build-debug"
+  COMMAND = cd "/home/zach/Nextcloud/Coding/CS 236/Kruskal's Algo/cmake-build-debug" && /opt/clion-2021.3.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S"/home/zach/Nextcloud/Coding/CS 236/Kruskal's Algo" -B"/home/zach/Nextcloud/Coding/CS 236/Kruskal's Algo/cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,9 +117,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/zach/Documents/Coding/CS 130/untitled1/cmake-build-debug
+# Folder: /home/zach/Nextcloud/Coding/CS 236/Kruskal's Algo/cmake-build-debug
 
-build all: phony untitled1
+build all: phony Kruskal_s_Algo
 
 # =============================================================================
 # Built-in targets
@@ -121,14 +128,14 @@ build all: phony untitled1
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /opt/clion-2021.3.2/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################
