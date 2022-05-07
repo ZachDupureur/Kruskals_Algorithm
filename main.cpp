@@ -1,10 +1,14 @@
 #include "header.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::vector<int> graph[7];
-    createGraph(graph);
 
-    std::cout << graph[0].at(2);
+    Graph myGraph(12, 7);
+    makeGraph(&myGraph);
+
+    int weight = myGraph.kruskalTree();
+
+    std::cout << "Weight is " << weight << std::endl;
+
+
     return 0;
 }

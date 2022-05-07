@@ -6,13 +6,67 @@
 
 // Representing Graph with Adjacency Matrix
 
-void createGraph(std::vector<int> input[]) {
-    // Quickly creating graph from lecture
-    input[0] = {0, 0, 6, 0, 0, 5, 0};
-    input[1] = {6, 0, 10, 0, 0, 8, 7};
-    input[2] = {0, 10, 0, 8, 10, 0, 5};
-    input[3] = {0, 0, 8, 0, 8, 0, 0};
-    input[4] = {0, 0, 10, 8, 0, 12, 7};
-    input[5] = {5, 8, 0, 0, 12, 0, 7};
-    input[6] = {0, 7, 5, 0, 7, 7, 0};
+int Graph::kruskalTree() {
+    int weight = 0;
+    // Sort edges
+    std::sort(edges.begin(), edges.end());
+
+    DisjointSet disjointSet(vertices);
+    // Make an iterator
+    std::vector<std::pair<int, std::pair<int,int>>>::iterator myIter;
+    for (myIter = edges.begin(); myIter != edges.end(); myIter++) {
+        int first = myIter->second.first; // Set numbers to first and second vertices
+        int second = myIter->second.second;
+        int set_A = disjointSet.find(first);
+        int set_B = disjointSet.find(second);
+
+        //Check for cycle
+        if (set_A != set_B) {
+            std::cout << first + 1 << " has edge with " << second + 1 << " with weight " << myIter->first << std::endl;
+            weight = weight + myIter->first;
+            disjointSet.makeUnion(set_A, set_B);
+        }
+    }
+
+    return weight;
+
 }
+
+int DisjointSet::find(int x) {
+    if (parent[x] != x) {
+        parent[x] = find(parent[x]);
+    }
+    return parent[x];
+}
+
+void DisjointSet::makeUnion(int x, int y) {
+    int h = find(x);
+    int j = find(y);
+
+    if (order[h] > order[j]) {
+        parent[y] = h;
+    }
+    else {
+        parent[x] = j;
+    }
+
+    if (order[h] == order[j]) {
+        order[j]++;
+    }
+}
+
+void makeGraph(class Graph *myGraph) { // Function to quickly make graph
+    myGraph->makeEdge(0,1,6);
+    myGraph->makeEdge(0,5,5);
+    myGraph->makeEdge(1,2,10);
+    myGraph->makeEdge(1,6,7);
+    myGraph->makeEdge(1,5,8);
+    myGraph->makeEdge(2,6,5);
+    myGraph->makeEdge(2,3,8);
+    myGraph->makeEdge(2,4,10);
+    myGraph->makeEdge(3,4,8);
+    myGraph->makeEdge(4,6,7);
+    myGraph->makeEdge(4,5,12);
+    myGraph->makeEdge(5,6,7);
+}
+
